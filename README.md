@@ -70,6 +70,7 @@ We use **/src/modules/index.js** to export all the modules that will be used in 
 ### Module file Structure
 
 This is an example structure from the Users module
+
 ![Users module file structure](https://user-images.githubusercontent.com/17097954/89644976-d0f85200-d8b0-11ea-8461-1a188446514b.png)
 
 The index.js and UsersContainers.js are the required files for every module
@@ -78,20 +79,22 @@ The index.js and UsersContainers.js are the required files for every module
 
 This file contains a description of the module and what its need if its depending on other modules.
 This is the entry point of every module, here we export every think we will need outside of this module.
-This is an example from the **Users** module
+This is an example from the **Users** module :
+
 ![Users/index.js](https://user-images.githubusercontent.com/17097954/89644984-d3f34280-d8b0-11ea-93ec-321b30a9739f.png)
+
 In the default export we mainly need this properties : **moduleName**, **routeProps**, **menu**.
 
-- We define the module name in the **moduleName**, this name should not be repeated.
-- In The **routeProps** we find the configuration for the module route(react router).
-- The **Menu** object contains the configuration for the menu.
-  _ If the **setting** property is true this menu will be added to the settings as sub-menu.
-  _ The **icon** property contains the name of the icon from **Font Awesome Icons**.
-  _ The **label** have the displayed name of the module.
-  _ And the **name** property contain the unique name of the module in the menu, needed for styling … etc
-  _ If a module have sub-menu, we will need an items property as shown below
+* We define the module name in the **moduleName**, this name should not be repeated.
+* In The **routeProps** we find the configuration for the module route(react router).
+* The **Menu** object contains the configuration for the menu.
+  * If the **setting** property is true this menu will be added to the settings as sub-menu.
+  * The **icon** property contains the name of the icon from **Font Awesome Icons**.
+  * The **label** have the displayed name of the module.
+  * And the **name** property contain the unique name of the module in the menu, needed for styling … etc
+  * If a module have sub-menu, we will need an items property as shown below
   ![subMenu array](https://user-images.githubusercontent.com/17097954/89644998-d9e92380-d8b0-11ea-8d87-9f046e0c8e32.png)
-  _ **For a clear menu purpose, if the setting property is true, you can’t have a sub-menu**
+  * **For a clear menu purpose, if the setting property is true, you can’t have a sub-menu**
 
 ### `/UsersContainer.js`
 
