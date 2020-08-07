@@ -92,7 +92,8 @@ In the default export we mainly need this properties : **moduleName**, **routePr
   * The **icon** property contains the name of the icon from **Font Awesome Icons**.
   * The **label** have the displayed name of the module.
   * And the **name** property contain the unique name of the module in the menu, needed for styling … etc
-  * If a module have sub-menu, we will need an items property as shown below
+  * If a module have sub-menu, we will need an items property as shown below.
+  
   ![subMenu array](https://user-images.githubusercontent.com/17097954/89644998-d9e92380-d8b0-11ea-8d87-9f046e0c8e32.png)
   * **For a clear menu purpose, if the setting property is true, you can’t have a sub-menu**
 
